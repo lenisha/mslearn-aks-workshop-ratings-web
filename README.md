@@ -69,3 +69,10 @@ provided by the bot. You will only need to do this once across all repos using o
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
 contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+## ARO
+To deploy on ARO
+```
+oc new-app nodeshift/centos7-s2i-nodejs:latest~https://github.com/lenisha/mslearn-aks-workshop-ratings-web --strategy=source
+```
+due to the bug https://github.com/nodeshift/ubi8-s2i-web-app/issues/38#issuecomment-469849670
